@@ -1,6 +1,5 @@
 package test.set;
 
-
 public class MyService {
 
 	private MyDao dao;//MyService依赖MyDao
@@ -10,7 +9,6 @@ public class MyService {
 	}
 
 	public void setDao(MyDao dao) {
-		System.out.println("setDao()....");
 		this.dao = dao;
 	}
 
@@ -18,4 +16,6 @@ public class MyService {
 		System.out.println("MyService serviceLogin()......");
 		dao.queryUserByNameAndPwd();
 	}
+	
+	
 }

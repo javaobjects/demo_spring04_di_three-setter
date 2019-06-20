@@ -121,10 +121,10 @@ public class Test {
 	}
 }
 ```
+**测试结果如下**
+![](images/9.png)
 
-
-
-
+**备注：** 运行过程中有报过某个类红色告警不给过，解决方法为将这个类更改名称而后再次改回来则解决咯这个bug，究其原因是因为Eclipse软件件的bug
 
 **以上就是我对于 Java-Spring依赖属性的setter方法注入值 知识点整理的全部内容** 另附[源码](https://github.com/javaobjects/demo_spring04_di_three-setter.git)
 
