@@ -2,9 +2,9 @@ package test;
 
 public class MyController {
 
-	private MyService service;
+	private MyServiceIfac service;
 	
-	public MyController(MyService myService)
+	public MyController(MyServiceIfac myService)
 	{
 		this.service = myService;
 	}
