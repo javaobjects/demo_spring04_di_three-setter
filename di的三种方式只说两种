@@ -1,0 +1,35 @@
+
+
+属性注入的两种方式：
+
+1.构造函数注入：
+//需要在类中定义构造方法，并且接收参数，便于给属性赋值
+public MyController(MyService myService)
+	{
+		this.service=myService;
+	}
+	
+public MyService(MyDao myDao)
+	{
+		this.dao=myDao;
+	}
+
+//接着在配置文件中对bean进行配置，特别注意给构造方法中的参数赋值
+	<bean id="dao" class="test.MyDao">
+	
+	</bean>
+	<bean id="service" class="test.MyService">
+	<constructor-arg index="0" ref="dao"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="controller" class="test.MyController">
+	<constructor-arg index="0" ref="service"></constructor-arg>
+	</bean>
+
+
+2.属性的setter方法注入
+
+//需要提供属性的setter方法
+
+//需要在配置bean的时候使用标签<property>给属性赋值
