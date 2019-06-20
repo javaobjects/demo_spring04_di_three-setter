@@ -5,6 +5,9 @@
 	<classpathentry kind="src" path="lib"/>
 	<classpathentry kind="src" path="56-Images"/>
 	<classpathentry kind="src" path="57-Images"/>
+	<classpathentry kind="src" path="58-Images"/>
+	<classpathentry kind="src" path="59-Images"/>
+	<classpathentry kind="src" path="60-Images"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="lib/spring-beans-4.1.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-context-4.1.7.RELEASE.jar"/>
